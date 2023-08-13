@@ -1,6 +1,6 @@
 # Carbon Footprint Calculator
 
-![Carbon Footprint Calculator](images/carbon-footprint.png)
+![Carbon Footprint Calculator](images/carbon-footprint.PNG)
 
 The **Carbon Footprint Calculator** is a web-based tool designed to help individuals and organizations assess their carbon emissions and make informed decisions to reduce their environmental impact. By inputting various factors and activities, users can estimate their carbon footprint and receive recommendations on how to lower it.
 
