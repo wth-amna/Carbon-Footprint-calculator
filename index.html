@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="script.js" ></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Carbon footprint Calculator</h1>
+    </div>
+    <div>
+        <label for="electricityConsumed">Electricity Consumed (in unit/KWh)</label>
+        <input type="text" id="electricityConsumed" name="electricityConsumed" placeholder="Enter Electricity units consumed"><br>
+        <label for="numOfPeople">Number Of people</label>
+        <input type="text" id="numOfPeople" name="numOfPeople" placeholder="Enter Number Of people ">
+    </div>
+    <div>
+        <label for="vehicalType">Vehical Type</label>
+        <select id="vehicalType" name="vehicalType">
+            <option value="bike">Bike</option>
+            <option value="car">Car</option>
+            <option value="publicTransport">Public Transport</option>
+            <option value="byfoot">None/By foot</option>
+            <!-- Add more fuel types as needed -->
+        </select>
+    </div>
+    <div id="transportationInputs">
+        <label for="dailyDistance">Daily Distance (in km) </label>
+        <input type="text" id="dailyDistance" name="dailyDistance" placeholder="Enter Daily distance covered"><br>
+        <label for="dailyFuelConsumed">Daily Fuel Consumed (in liters) </label>
+        <input type="text" id="dailyFuelConsumed" name="dailyFuelConsumed" placeholder="Enter Fuel consumed in litters ">
+        <!-- Add the dropdown menu for fuel type -->
+        <div>
+            <label for="fuelType">Fuel Type</label>
+            <select id="fuelType" name="fuelType">
+                <option value="gasoline">Gasoline</option>
+                <option value="diesel">Diesel</option>
+                <!-- <option value="other">Other</option> -->
+                <!-- Add more fuel types as needed -->
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <label for="gasConsumed">Gas Consumed (in units/cm3)</label>
+        <input type="text" id="gasConsumed" name="gasConsumed" placeholder="Enter Monthly gas consumed in cm">
+    </div><br>
+    <div>
+        <button id="carbonFootprint"> Calculate Carbon Footprint</button>
+    </div>
+    <div class="result" style="display: none;">
+        <p> Your total carbon footprint is <span id="calculatedfootprint"></span>Kg CO2 per month approx.</p>
+        <p>Note: Keep in mind that it's just a rough estimation.
+             The carbon footprint calculations provided for different modes of transportation, such as bikes, cars, and public transport, are based on average emission factors and assumptions. The actual carbon emissions may vary based on various factors, including the specific make and model of the vehicle, driving conditions, individual driving habits, and maintenance practices.</p>
+
+        <p>To reduce your carbon footprint, consider adopting energy-efficient habits, such as using LED lights and turning off appliances when not in use. Opt for sustainable transportation options like biking, walking, or using public transit. Minimize waste by recycling and composting, and make eco-friendly choices in your diet by reducing meat consumption. These simple actions can have a positive impact on the environment and help combat climate change.</p>
+    </div>
+   
+</body>
+</html>
